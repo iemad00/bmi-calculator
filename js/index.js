@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const metricSelector = document.getElementById("metric-selector");
     const imperialUselector = document.getElementById("imperial-uselector");
     const imperialSelector = document.getElementById("imperial-selector");
+    
+    document.getElementsByClassName("result-header")[0]?.classList.add('d-none')
 
     metricUnit.addEventListener("click", () => {
       metricInput?.classList.remove("d-none");
