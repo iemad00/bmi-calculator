@@ -1,40 +1,32 @@
-# Aqwas Task - Body Mass Index Calculator solution
+# Aqwas Task - Body Mass Index Calculator Solution
 
 ## Table of contents
 
 - [Overview](#overview)
+  - [Features](#features)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+- [How to Use](#how-to-use)
+- [Installation](#installation)
+- [License](#license)
 
 ## Overview
 
-### The challenge
+### Features
 
-Users should be able to:
+Users can:
 
-- Select whether they want to use metric or imperial units
-- Enter their height and weight
-- See their BMI result, with their weight classification and healthy weight range
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+- Select between metric and imperial units for input.
+- Enter their height and weight to calculate BMI.
+- View BMI results along with weight classification and healthy weight range.
+- Experience a responsive design that adapts to different screen sizes.
+- See hover and focus states for all interactive elements.
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
-### Links
-
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+![Screenshot](./assets/images/screenshot.jpg)
 
 ## My process
 
@@ -42,11 +34,29 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
+- SCSS for styling
+- JavaScript for interactivity
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+## How to Use
+
+1. Open the BMI Calculator in your web browser.
+2. Select either Metric or Imperial units.
+3. Enter your height and weight in the selected units.
+4. View your calculated BMI, weight classification, and healthy weight range.
+
+## Installation
+
+1. Clone this repository using the command:
+    ```sh
+    git clone <repository-url>
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd BMI-UPDATE
+    ```
+3. Open `index.html` in your web browser to view the BMI calculator.
+
+## License
+
+This project is licensed under the MIT License.
