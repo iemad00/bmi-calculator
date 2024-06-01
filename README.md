@@ -20,7 +20,6 @@ Users can:
 - Enter their height and weight to calculate BMI.
 - View BMI results along with weight classification and healthy weight range.
 - Experience a responsive design that adapts to different screen sizes.
-- See hover and focus states for all interactive elements.
 
 ### Screenshot
 
