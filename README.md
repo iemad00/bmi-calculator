@@ -5,12 +5,10 @@
 - [Overview](#overview)
   - [Features](#features)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [How to Use](#how-to-use)
 - [Installation](#installation)
-- [License](#license)
 
 ## Overview
 
