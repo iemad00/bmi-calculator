@@ -70,52 +70,54 @@ body {
       font-weight: 600;
     }
 
-
-
     .units-toggle {
       display: flex;
       gap: $gap-base;
       margin: $gap-lg 0;
-    }
-    .unit {
-      flex: 1;
-      display: flex;
-      gap: $gap-base;
-      align-items: center;
-      font-weight: 600;
-    }
-    .unit span {
-      margin-left: 10px;
-    }
-    input[type="radio"] {
-      appearance: none;
-      width: 31px;
-      height: 31px;
-      border: 2px solid $color-borders;
-      border-radius: 50%;
-      outline: none;
-      cursor: pointer;
-      position: relative;
-      background-color: $color-white;
-      transition: border-color 0.3s, background-color 0.3s;
-    }
-    input[type="radio"]:hover {
-      border-color: $color-blue;
-    }
-    input[type="radio"]:checked {
-      border: none;    
-      background-color: rgba(0, 123, 255, 0.2);
-    }
-    input[type="radio"]:checked::before {
-      content: '';
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: #007bff;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+
+      .unit {
+        flex: 1;
+        display: flex;
+        gap: $gap-base;
+        align-items: center;
+        font-weight: 600;
+
+        span {
+          margin-left: 10px;
+        }
+      }
+
+      input[type="radio"] {
+        appearance: none;
+        width: 31px;
+        height: 31px;
+        border: 2px solid $color-borders;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        background-color: $color-white;
+        transition: border-color 0.3s, background-color 0.3s;
+      }
+      input[type="radio"]:hover {
+        border-color: $color-blue;
+      }
+      input[type="radio"]:checked {
+        border: none;    
+        background-color: $color-blue-transparent;
+      }
+      input[type="radio"]:checked::before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: $color-blue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+  
     }
 
     .input-container {
@@ -159,6 +161,10 @@ body {
             letter-spacing: -0.05em;
             font-weight: 600;
           }
+        }
+
+        .input-wrapper:hover{
+          border-color: $color-blue;
         }
       }
     }
