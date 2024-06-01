@@ -51,7 +51,7 @@ Users can:
     ```
 2. Navigate to the project directory:
     ```sh
-    cd BMI-UPDATE
+    cd bmi-calculator
     ```
 3. Open `index.html` in your web browser to view the BMI calculator.
 
