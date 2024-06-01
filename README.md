@@ -26,7 +26,7 @@ Users can:
 
 ### Screenshot
 
-![Screenshot](./assets/images/screenshot.jpg)
+![Screenshot](./assets/images/screenshot.png)
 
 ## My process
 
