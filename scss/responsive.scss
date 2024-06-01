@@ -1,0 +1,320 @@
+@import 'variables';
+
+@media (max-width: 1440px) {
+  .hero {
+    &-background {
+      left: -50px;
+      width: 1048px;
+    }
+    .icon {
+      left: 0px;
+    }
+    &-content {
+      left: 0px;
+    }
+  }
+  .bmi-meaning {
+    gap: 3rem;
+    padding: 0px;
+
+    .section-one {
+      position: relative;
+      padding: 50px;
+      padding-bottom: 0px;
+      .bmi-image {
+        width: 468px;
+        height: 533px;
+      }
+      &::after {
+        width: 100%;
+      }
+    }
+    .section-two {
+      margin-top: 10rem;
+    }
+  }
+
+  .pattern-curved-line-right{
+    top: 2049px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    &-background {
+      left: -30px;
+      width: 708px;
+      height: 667px;
+    }
+    &-content {
+      left: 0px;
+      width: 385px;
+    }
+    .icon {
+      left: 0px;
+    }
+    .title {
+      font-size: $xl-size;
+    }
+    .description {
+      font-size: $xs-size;
+    }
+    .input-section {
+      width: 504px;
+      padding: $padding-lg;
+    }
+    .input-section {
+      .input-item {
+        .input-wrapper {
+          padding: 12px;
+        }
+      }
+    }
+  }
+  .bmi-meaning {
+    .section-one {
+      position: relative;
+      padding: 50px;
+      padding-bottom: 0px;
+      .bmi-image {
+        width: 368px;
+        height: 433px;
+      }
+    }
+  }
+  .tips {
+    margin-top: 7rem;
+    .tips-content {
+      gap: 2rem;
+    }
+  }
+  .bmi-limitations {
+    .contant {
+      max-width: 400px;
+      .section-title {
+        font-size: $lg-size;
+      }
+    }
+    .limitations-content {
+      .limitation {
+        max-width: 260px;
+        .box {
+          h3 {
+            font-size: $sm-size;
+          }
+        }
+        p {
+          font-size: $xs-size;
+        }
+        &:nth-child(1) {
+          top: -20%;
+          right: 10%;
+        }
+        &:nth-child(2) {
+          top: 17%;
+          right: 0%;
+        }
+        &:nth-child(3) {
+          top: 17%;
+          right: 31%;
+        }
+        &:nth-child(4) {
+          top: 47%;
+          right: 18.2%;
+        }
+        &:nth-child(5) {
+          top: 47%;
+          right: 49.3%;
+        }
+      }
+    }
+  }
+  .pattern-curved-line-left {
+    top: 669px;
+  }
+
+  .pattern-curved-line-right{
+    top: 2049px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .pattern-curved-line-left, .pattern-curved-line-right {
+    display: none;
+  }
+  .hero {
+    &-background {
+      left: 0;
+      width: 100%;
+    }
+    .icon {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &-content {
+      left: 0px;
+      width: 100%;
+      text-align: center;
+      padding: 0px $padding-xl;
+      top: 20%;
+    }
+    .input-section {
+      top: 95%;
+      right: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 650px;
+    }
+  }
+  .hero-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .bmi-meaning {
+    padding-top: 15rem;
+    .section-one {
+      padding-bottom: 0px;
+      .bmi-image {
+        width: 268px;
+        height: 333px;
+      }
+    }
+    .section-two {
+      .section-title {
+        font-size: $lg-size;
+      }
+    }
+  }
+  .tips {
+    .tips-content {
+      flex-direction: column;
+      .tip {
+        flex-direction: row;
+      }
+    }
+  }
+  .bmi-limitations {
+    .contant {
+      max-width: 100%;
+      text-align: center;
+      padding: 0px 2rem;
+      .section-title {
+        font-size: $lg-size;
+      }
+    }
+    .limitations-content {
+      display: inline-grid;
+      grid-template-columns: auto auto;
+      gap: $gap-lg;
+      margin-top: 3rem;
+      height: 100%;
+      width: 100%;
+      margin-bottom: 5rem;
+      .limitation {
+        max-width: 80%;
+        position: sticky;
+
+        &:nth-child(1) {
+          top: 0%;
+          right: 0%;
+        }
+        &:nth-child(2) {
+          top: 0%;
+          right: 0%;
+        }
+        &:nth-child(3) {
+          top: 0%;
+          right: 0%;
+        }
+        &:nth-child(4) {
+          top: 0%;
+          right: 0%;
+        }
+        &:nth-child(5) {
+          top: 0%;
+          right: 0%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    .input-section {
+      top: 105%;
+      width: 360px;
+      .input-container {
+        flex-direction: column;
+        .input-item {
+          width: 100%;
+          .input-wrapper {
+            padding: 12px;
+          }
+        }
+      }
+      .imperial-input-box {
+        flex-direction: row;
+      }
+      .bmi-result {
+        flex-direction: column;
+        gap: 0px;
+        align-items: start;
+        border-radius: $border-radius-base;
+      }
+    }
+  }
+
+  .bmi-meaning {
+    margin-top: 13rem;
+    flex-direction: column;
+    gap: 0;
+    .section-one {
+      padding-top: 12rem;
+      padding-bottom: 0px;
+      padding: 2.5rem;
+      .bmi-image {
+        width: 268px;
+        height: 333px;
+      }
+    }
+    .section-two {
+      margin-top: 2rem;
+      padding: 2.5rem;
+      p {
+        font-size: $xs-size;
+      }
+    }
+  }
+  .tips {
+    padding: 2rem;
+    .tips-bg {
+      right: 0%;
+    }
+    .tips-content {
+      flex-direction: column;
+      .tip {
+        flex-direction: column;
+      }
+    }
+  }
+  .bmi-limitations {
+    .limitations-content {
+      grid-template-columns: auto;
+      justify-items: center;
+      gap: $gap-lg;
+      margin-top: 3rem;
+      height: 100%;
+      left: 0px;
+      .limitation {
+        max-width: 80%;
+        padding: 2rem;
+      }
+    }
+  }
+}

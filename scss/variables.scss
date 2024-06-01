@@ -1,0 +1,42 @@
+// Fonts
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+  
+
+$font-body: "Inter", sans-serif;
+$color-white: #fff;
+$color-dark-blue: #5e6e85;
+$color-gunmetal: #253347;
+$color-borders: #d8e2e7;
+$color-blue: #345ff6;
+
+// font sizes
+$xs-size: 14px;
+$base-size: 16px;
+$sm-size: 20px;
+$lg-size: 24px;
+$xl-size: 48px;
+$xxl-size: 64px;
+
+$gap-base: 16px;
+$gap-lg: 24px;
+$gap-xl: 32px;
+
+$padding-base: 20px;
+$padding-lg: 24px;
+$padding-xl: 32px;
+
+$border-radius-base: 16px;
+$border-radius-large: 35px;
+$border-radius-round: 999px;

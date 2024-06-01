@@ -1,0 +1,679 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+  color: #253347;
+}
+
+.container {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 737px;
+}
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: -200px;
+  width: 1178px;
+  height: 737px;
+  border-radius: 0 0 35px 35px;
+  background: linear-gradient(-69.9deg, #d6e6fe, rgba(214, 251, 254, 0));
+}
+.hero-content {
+  position: absolute;
+  top: 266px;
+  left: 0;
+  width: 564px;
+}
+.hero .icon {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 64px;
+  height: 64px;
+}
+.hero .title {
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  margin: 0;
+}
+.hero .description {
+  font-size: 16px;
+  color: #5e6e85;
+  line-height: 1.5;
+  margin: 24px 0;
+}
+.hero .input-section {
+  position: absolute;
+  top: 167px;
+  right: 0;
+  width: 564px;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+}
+.hero .input-section .subtitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+.hero .input-section .units-toggle {
+  display: flex;
+  gap: 16px;
+  margin: 24px 0;
+}
+.hero .input-section .unit {
+  flex: 1;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-weight: 600;
+}
+.hero .input-section .unit span {
+  margin-left: 10px;
+}
+.hero .input-section input[type=radio] {
+  appearance: none;
+  width: 31px;
+  height: 31px;
+  border: 2px solid #d8e2e7;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+.hero .input-section input[type=radio]:hover {
+  border-color: #345ff6;
+}
+.hero .input-section input[type=radio]:checked {
+  border: none;
+  background-color: rgba(0, 123, 255, 0.2);
+}
+.hero .input-section input[type=radio]:checked::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #007bff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero .input-section .input-container {
+  display: flex;
+  gap: 24px;
+}
+.hero .input-section .input-container .input-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: end;
+  margin-bottom: 1rem;
+}
+.hero .input-section .input-container .input-item label {
+  font-size: 14px;
+  color: #5e6e85;
+}
+.hero .input-section .input-container .input-item .input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid #d8e2e7;
+  border-radius: 16px;
+}
+.hero .input-section .input-container .input-item .input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 24px;
+}
+.hero .input-section .input-container .input-item .input-wrapper .unit-label {
+  font-size: 24px;
+  color: #345ff6;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+}
+.hero .input-section .bmi-result {
+  display: flex;
+  padding: 20px;
+  align-self: stretch;
+  border-radius: 16px 999px 999px 16px;
+  background: linear-gradient(90deg, #345ff7, #587dff);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  color: #fff;
+  margin-top: 32px;
+}
+.hero .input-section .bmi-result .result-header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hero .input-section .bmi-result .result-header .result-label {
+  position: relative;
+  font-weight: 600;
+  align-self: stretch;
+  line-height: 150%;
+  font-size: 16px;
+}
+.hero .input-section .bmi-result .result-header .result-value {
+  position: relative;
+  font-weight: 600;
+  font-size: 48px;
+  letter-spacing: -0.05em;
+  line-height: 110%;
+}
+.hero .input-section .bmi-result .result-description {
+  flex: 1;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.bmi-meaning {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+  padding: 70px 0px;
+}
+.bmi-meaning .section-one {
+  position: relative;
+  padding: 50px;
+  padding-bottom: 0px;
+}
+.bmi-meaning .section-one .bmi-image {
+  width: 468px;
+  height: 533px;
+  object-fit: cover;
+}
+.bmi-meaning .section-one::after {
+  position: absolute;
+  content: "";
+  left: 0%;
+  bottom: 0;
+  background-color: #e7f5fe;
+  width: 568px;
+  height: 353px;
+  z-index: -999;
+  border-radius: 16px;
+}
+.bmi-meaning .section-two {
+  margin-top: 100px;
+}
+.bmi-meaning .section-two .section-title {
+  align-self: stretch;
+  letter-spacing: -0.05em;
+  line-height: 110%;
+  font-weight: 600;
+  font-size: 48px;
+}
+.bmi-meaning .section-two p {
+  margin-top: 20px;
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5e6e85;
+}
+
+.tips {
+  position: relative;
+  margin-top: 10rem;
+  padding: 3rem 0rem;
+}
+.tips .tips-bg {
+  position: absolute;
+  background: linear-gradient(-69.9deg, #d6e6fe, rgba(214, 251, 254, 0));
+  width: 100%;
+  opacity: 0.25;
+  right: -5%;
+  bottom: 0;
+  top: 0%;
+}
+.tips .tips-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 5rem;
+}
+.tips .tips-content .tip {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.tips .tips-content .tip img {
+  width: 64px;
+  height: 64px;
+}
+.tips .tips-content .tip h3 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.bmi-limitations {
+  margin-top: 5rem;
+}
+.bmi-limitations .contant {
+  max-width: 600px;
+}
+.bmi-limitations .contant .section-title {
+  font-size: 48px;
+  font-weight: 600;
+}
+.bmi-limitations .contant p {
+  font-size: 14px;
+  color: #5e6e85;
+}
+.bmi-limitations .limitations-content {
+  position: relative;
+  height: 700px;
+}
+.bmi-limitations .limitations-content .limitation {
+  position: absolute;
+  box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.175);
+  border-radius: 16px;
+  background-color: #fff;
+  width: 365px;
+  overflow: hidden;
+  padding: 24px;
+  box-sizing: border-box;
+}
+.bmi-limitations .limitations-content .limitation:nth-child(1) {
+  top: -20%;
+  right: 10%;
+}
+.bmi-limitations .limitations-content .limitation:nth-child(2) {
+  top: 17%;
+  right: 0%;
+}
+.bmi-limitations .limitations-content .limitation:nth-child(3) {
+  top: 17%;
+  right: 31%;
+}
+.bmi-limitations .limitations-content .limitation:nth-child(4) {
+  top: 47%;
+  right: 18.2%;
+}
+.bmi-limitations .limitations-content .limitation:nth-child(5) {
+  top: 47%;
+  right: 49.3%;
+}
+.bmi-limitations .limitations-content .limitation .box {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.bmi-limitations .limitations-content .limitation .box .icon {
+  width: 32px;
+  position: relative;
+  height: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.bmi-limitations .limitations-content .limitation .box h3 {
+  letter-spacing: -0.05em;
+  font-weight: 600;
+}
+.bmi-limitations .limitations-content .limitation p {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5e6e85;
+}
+
+.pattern-curved-line-left {
+  position: absolute;
+  top: 749px;
+  width: 85px;
+  height: 200px;
+  right: 20%;
+}
+
+.pattern-curved-line-right {
+  position: absolute;
+  top: 2249px;
+  width: 85px;
+  height: 200px;
+  left: 20%;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@media (max-width: 1440px) {
+  .hero-background {
+    left: -50px;
+    width: 1048px;
+  }
+  .hero .icon {
+    left: 0px;
+  }
+  .hero-content {
+    left: 0px;
+  }
+  .bmi-meaning {
+    gap: 3rem;
+    padding: 0px;
+  }
+  .bmi-meaning .section-one {
+    position: relative;
+    padding: 50px;
+    padding-bottom: 0px;
+  }
+  .bmi-meaning .section-one .bmi-image {
+    width: 468px;
+    height: 533px;
+  }
+  .bmi-meaning .section-one::after {
+    width: 100%;
+  }
+  .bmi-meaning .section-two {
+    margin-top: 10rem;
+  }
+  .pattern-curved-line-right {
+    top: 2049px;
+  }
+}
+@media (max-width: 1200px) {
+  .hero-background {
+    left: -30px;
+    width: 708px;
+    height: 667px;
+  }
+  .hero-content {
+    left: 0px;
+    width: 385px;
+  }
+  .hero .icon {
+    left: 0px;
+  }
+  .hero .title {
+    font-size: 48px;
+  }
+  .hero .description {
+    font-size: 14px;
+  }
+  .hero .input-section {
+    width: 504px;
+    padding: 24px;
+  }
+  .hero .input-section .input-item .input-wrapper {
+    padding: 12px;
+  }
+  .bmi-meaning .section-one {
+    position: relative;
+    padding: 50px;
+    padding-bottom: 0px;
+  }
+  .bmi-meaning .section-one .bmi-image {
+    width: 368px;
+    height: 433px;
+  }
+  .tips {
+    margin-top: 7rem;
+  }
+  .tips .tips-content {
+    gap: 2rem;
+  }
+  .bmi-limitations .contant {
+    max-width: 400px;
+  }
+  .bmi-limitations .contant .section-title {
+    font-size: 24px;
+  }
+  .bmi-limitations .limitations-content .limitation {
+    max-width: 260px;
+  }
+  .bmi-limitations .limitations-content .limitation .box h3 {
+    font-size: 20px;
+  }
+  .bmi-limitations .limitations-content .limitation p {
+    font-size: 14px;
+  }
+  .bmi-limitations .limitations-content .limitation:nth-child(1) {
+    top: -20%;
+    right: 10%;
+  }
+  .bmi-limitations .limitations-content .limitation:nth-child(2) {
+    top: 17%;
+    right: 0%;
+  }
+  .bmi-limitations .limitations-content .limitation:nth-child(3) {
+    top: 17%;
+    right: 31%;
+  }
+  .bmi-limitations .limitations-content .limitation:nth-child(4) {
+    top: 47%;
+    right: 18.2%;
+  }
+  .bmi-limitations .limitations-content .limitation:nth-child(5) {
+    top: 47%;
+    right: 49.3%;
+  }
+  .pattern-curved-line-left {
+    top: 669px;
+  }
+  .pattern-curved-line-right {
+    top: 2049px;
+  }
+}
+@media (max-width: 1023px) {
+  .pattern-curved-line-left, .pattern-curved-line-right {
+    display: none;
+  }
+  .hero-background {
+    left: 0;
+    width: 100%;
+  }
+  .hero .icon {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hero-content {
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 0px 32px;
+    top: 20%;
+  }
+  .hero .input-section {
+    top: 95%;
+    right: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+  }
+  .hero-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .bmi-meaning {
+    padding-top: 15rem;
+  }
+  .bmi-meaning .section-one {
+    padding-bottom: 0px;
+  }
+  .bmi-meaning .section-one .bmi-image {
+    width: 268px;
+    height: 333px;
+  }
+  .bmi-meaning .section-two .section-title {
+    font-size: 24px;
+  }
+  .tips .tips-content {
+    flex-direction: column;
+  }
+  .tips .tips-content .tip {
+    flex-direction: row;
+  }
+  .bmi-limitations .contant {
+    max-width: 100%;
+    text-align: center;
+    padding: 0px 2rem;
+  }
+  .bmi-limitations .contant .section-title {
+    font-size: 24px;
+  }
+  .bmi-limitations .limitations-content {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    gap: 24px;
+    margin-top: 3rem;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .bmi-limitations .limitations-content .limitation {
+    max-width: 80%;
+    position: sticky;
+  }
+  .bmi-limitations .limitations-content .limitation:nth-child(1) {
+    top: 0%;
+    right: 0%;
+  }
+  .bmi-limitations .limitations-content .limitation:nth-child(2) {
+    top: 0%;
+    right: 0%;
+  }
+  .bmi-limitations .limitations-content .limitation:nth-child(3) {
+    top: 0%;
+    right: 0%;
+  }
+  .bmi-limitations .limitations-content .limitation:nth-child(4) {
+    top: 0%;
+    right: 0%;
+  }
+  .bmi-limitations .limitations-content .limitation:nth-child(5) {
+    top: 0%;
+    right: 0%;
+  }
+}
+@media (max-width: 767px) {
+  .hero .input-section {
+    top: 105%;
+    width: 360px;
+  }
+  .hero .input-section .input-container {
+    flex-direction: column;
+  }
+  .hero .input-section .input-container .input-item {
+    width: 100%;
+  }
+  .hero .input-section .input-container .input-item .input-wrapper {
+    padding: 12px;
+  }
+  .hero .input-section .imperial-input-box {
+    flex-direction: row;
+  }
+  .hero .input-section .bmi-result {
+    flex-direction: column;
+    gap: 0px;
+    align-items: start;
+    border-radius: 16px;
+  }
+  .bmi-meaning {
+    margin-top: 13rem;
+    flex-direction: column;
+    gap: 0;
+  }
+  .bmi-meaning .section-one {
+    padding-top: 12rem;
+    padding-bottom: 0px;
+    padding: 2.5rem;
+  }
+  .bmi-meaning .section-one .bmi-image {
+    width: 268px;
+    height: 333px;
+  }
+  .bmi-meaning .section-two {
+    margin-top: 2rem;
+    padding: 2.5rem;
+  }
+  .bmi-meaning .section-two p {
+    font-size: 14px;
+  }
+  .tips {
+    padding: 2rem;
+  }
+  .tips .tips-bg {
+    right: 0%;
+  }
+  .tips .tips-content {
+    flex-direction: column;
+  }
+  .tips .tips-content .tip {
+    flex-direction: column;
+  }
+  .bmi-limitations .limitations-content {
+    grid-template-columns: auto;
+    justify-items: center;
+    gap: 24px;
+    margin-top: 3rem;
+    height: 100%;
+    left: 0px;
+  }
+  .bmi-limitations .limitations-content .limitation {
+    max-width: 80%;
+    padding: 2rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
