@@ -54,7 +54,3 @@ Users can:
     cd bmi-calculator
     ```
 3. Open `index.html` in your web browser to view the BMI calculator.
-
-## License
-
-This project is licensed under the MIT License.
