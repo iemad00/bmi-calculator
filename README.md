@@ -33,10 +33,8 @@ Users can:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - SCSS for styling
 - JavaScript for interactivity
-- Mobile-first workflow
 
 ## How to Use
 
