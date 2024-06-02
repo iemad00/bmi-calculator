@@ -12,13 +12,10 @@ body {
 }
 
 .hero {
-  position: relative;
   width: 100%;
   height: 737px;
 
   &-background {
-    position: absolute;
-    top: 0;
     left: -200px;
     width: 1178px;
     height: 737px;
@@ -27,14 +24,12 @@ body {
   }
 
   &-content {
-    position: absolute;
     top: 266px;
     left: 0;
     width: 564px;
   }
 
   .icon {
-    position: absolute;
     top: 75px;
     left: 0;
     width: 64px;
@@ -56,7 +51,6 @@ body {
   }
 
   .input-section {
-    position: absolute;
     top: 167px;
     right: 0;
     width: 564px;
@@ -71,22 +65,7 @@ body {
     }
 
     .units-toggle {
-      display: flex;
-      gap: $gap-base;
-      margin: $gap-lg 0;
-
-      .unit {
-        flex: 1;
-        display: flex;
-        gap: $gap-base;
-        align-items: center;
-        font-weight: 600;
-
-        span {
-          margin-left: 10px;
-        }
-      }
-
+      
       input[type="radio"] {
         appearance: none;
         width: 31px;
@@ -99,13 +78,16 @@ body {
         background-color: $color-white;
         transition: border-color 0.3s, background-color 0.3s;
       }
+
       input[type="radio"]:hover {
         border-color: $color-blue;
       }
+
       input[type="radio"]:checked {
-        border: none;    
+        border: none;
         background-color: $color-blue-transparent;
       }
+
       input[type="radio"]:checked::before {
         content: '';
         width: 12px;
@@ -117,25 +99,16 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
       }
-  
+    }
+
+    label {
+      font-size: 14px;
+      color: $color-dark-blue;
     }
 
     .input-container {
-      display: flex;
-      gap: $gap-lg;
-
       .input-item {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: $gap-base;
-        justify-content: end;
         margin-bottom: 1rem;
-
-        label {
-          font-size: 14px;
-          color: $color-dark-blue;
-        }
 
         .input-wrapper {
           display: flex;
@@ -149,7 +122,6 @@ body {
             flex: 1;
             border: none;
             outline: none;
-            font-size: 16px;
             width: 100%;
             font-weight: 600;
             font-size: $lg-size;
@@ -163,42 +135,27 @@ body {
           }
         }
 
-        .input-wrapper:hover{
+        .input-wrapper:hover {
           border-color: $color-blue;
         }
       }
     }
 
     .bmi-result {
-      display: flex;
       padding: $padding-base;
-      align-self: stretch;
       border-radius: $border-radius-base $border-radius-round $border-radius-round $border-radius-base;
       background: linear-gradient(90deg, #345ff7, #587dff);
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      gap: $gap-xl;
       color: $color-white;
       margin-top: 32px;
 
       .result-header {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-
         .result-label {
-          position: relative;
           font-weight: 600;
-          align-self: stretch;
           line-height: 150%;
           font-size: $base-size;
         }
 
         .result-value {
-          position: relative;
           font-weight: 600;
           font-size: $xl-size;
           letter-spacing: -0.05em;
@@ -207,13 +164,14 @@ body {
       }
 
       .result-description {
-        flex: 1;
         font-size: $xs-size;
         line-height: 150%;
       }
     }
   }
 }
+
+
 
 .bmi-meaning {
   display: flex;

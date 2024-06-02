@@ -20,10 +20,10 @@
 
   <body>
     <div class="container hero-container">
-      <section class="hero">
+      <section class="hero position-relative">
         <div class="hero-background"></div>
-        <img class="icon" src="./assets/images/logo.svg" alt="Icon" />
-        <div class="hero-content">
+        <img class="icon position-absolute" src="./assets/images/logo.svg" alt="Icon" />
+        <div class="hero-content position-absolute">
           <h1 class="title">Body Mass</h1>
           <h1 class="title">Index Calculator</h1>
           <p class="description">
@@ -33,91 +33,88 @@
             to evaluate your overall health and well-being.
           </p>
         </div>
-        <div class="input-section">
+        <div class="input-section position-absolute bg-white shadow p-4 rounded-4">
           <h2 class="subtitle">Enter your details below</h2>
-          <div class="units-toggle">
-            <div class="unit">
+          <div class="units-toggle row my-3">
+            <div class="unit d-flex col-6 align-items-center">
               <input type="radio" id="metric-unit" name="unit" checked>
-              <span>Metric</span>
+              <span class="ms-2">Metric</span>
             </div>
-            <div class="unit">
+            <div class="unit d-flex ms-6 col-5 align-items-center">
               <input type="radio" id="imperial-unit" name="unit">
-              <span>Imperial</span>
+              <span class="ms-2">Imperial</span>
             </div>
           </div>
-          
-          <div class="input-container" id="metric-input">
-            <div class="input-item">
-              <label for="height">Height</label>
-              <div class="input-wrapper">
-                <input type="text" id="metric-height" placeholder="0"/>
-                <span class="unit-label">cm</span>
+          <div class="input-container d-flex gap-4" id="metric-input">
+            <div class="input-item mb-3">
+              <label for="metric-height">Height</label>
+              <div class="input-wrapper d-flex align-items-center border p-2 rounded-4">
+                <input type="text" class="p-2 border-0" id="metric-height" placeholder="0">
+                <span class="unit-label ms-2">cm</span>
               </div>
             </div>
-            <div class="input-item">
-              <label for="weight">Weight</label>
-              <div class="input-wrapper">
-                <input type="text" id="metric-weight" placeholder="0"/>
-                <span class="unit-label">kg</span>
+            <div class="input-item mb-3">
+              <label for="metric-weight">Weight</label>
+              <div class="input-wrapper d-flex align-items-center border p-2 rounded-4">
+                <input type="text" class="p-2 border-0" id="metric-weight" placeholder="0">
+                <span class="unit-label ms-2">kg</span>
               </div>
             </div>
           </div>
           <div class="d-none" id="imperial-input">
-            <div class="input-container imperial-input-box">
-              <div class="input-item">
-                <label for="height-ft">Height</label>
-                <div class="input-wrapper">
-                  <input type="text" id="imperial-height-ft" placeholder="0"/>
-                  <span class="unit-label">ft</span>
+            <label for="imperial-height-ft">Height</label>
+
+            <div class="input-container imperial-input-box d-flex gap-4 align-items-center">
+              <div class="input-item mb-3">
+                <div class="input-wrapper d-flex align-items-center border p-2 rounded-4">
+                  <input type="text" class="p-2 border-0" id="imperial-height-ft" placeholder="0">
+                  <span class="unit-label ms-2">ft</span>
                 </div>
               </div>
-              <div class="input-item">
-                <div class="input-wrapper">
-                  <input type="text" id="imperial-height-in" placeholder="0"/>
-                  <span class="unit-label">in</span>
+              <div class="input-item mb-3">
+                <div class="input-wrapper d-flex align-items-center border p-2 rounded-4">
+                  <input type="text" class="p-2 border-0" id="imperial-height-in" placeholder="0">
+                  <span class="unit-label ms-2">in</span>
                 </div>
               </div>
             </div>
-            <div class="input-container imperial-input-box">
-              <div class="input-item">
-                <label for="weight-st">Weight</label>
-                <div class="input-wrapper">
-                  <input type="text" id="imperial-weight-st" placeholder="0"/>
-                  <span class="unit-label">st</span>
+            <label for="imperial-weight-st">Weight</label>
+            <div class="input-container imperial-input-box d-flex gap-4 align-items-center">
+              <div class="input-item mb-3">
+                <div class="input-wrapper d-flex align-items-center border p-2 rounded-4">
+                  <input type="text" class="p-2 border-0" id="imperial-weight-st" placeholder="0">
+                  <span class="unit-label ms-2">st</span>
                 </div>
               </div>
-              <div class="input-item">
-                <div class="input-wrapper">
-                  <input type="text" id="imperial-weight-lbs" placeholder="0"/>
-                  <span class="unit-label">lbs</span>
+              <div class="input-item mb-3">
+                <div class="input-wrapper d-flex align-items-center border p-2 rounded-4">
+                  <input type="text" class="p-2 border-0" id="imperial-weight-lbs" placeholder="0">
+                  <span class="unit-label ms-2">lbs</span>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="bmi-result">
+          <div class="bmi-result d-flex align-items-center justify-content-center gap-3 mt-4 p-3 text-white text-dark">
             <div class="wc-header">
               <p class="welcome-label">Welcome!</p>
               <p class="welcome-message">Enter your height and weight and you’ll see your BMI result here</p>
             </div>
-
-            <div class="result-header">
-              <p class="result-label">Your BMI is...</p>
-              <p class="result-value" id="bmi-value"></p>
+            <div class="result row align-items-center">
+              <div class="result-header col-12 col-md-4">
+                <p class="result-label">Your BMI is...</p>
+                <p class="result-value" id="bmi-value"></p>
+              </div>
+              <div class="result-description col-12 col-md-8">
+                <span id="bmi-description"></span>
+                <span id="healthy-weight-range"></span>
+              </div>
             </div>
-            
-            <div class="result-description">
-              <span class="result-description" id="bmi-description">
-                <!-- Result description will be injected here -->
-              </span>
-              <span class="healthy-weight-range" id="healthy-weight-range">
-                <!-- Healthy weight range will be injected here -->
-              </span>
-            </div>
+ 
           </div>
         </div>
       </section>
     </div>
+    
 
     <div class="container">
       <section class="bmi-meaning">
