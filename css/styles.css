@@ -212,37 +212,16 @@ body {
 }
 
 .tips {
-  position: relative;
   margin-top: 10rem;
   padding: 3rem 0rem;
 }
 .tips .tips-bg {
-  position: absolute;
   background: linear-gradient(-69.9deg, #d6e6fe, rgba(214, 251, 254, 0));
   width: 100%;
   opacity: 0.25;
   right: -5%;
   bottom: 0;
   top: 0%;
-}
-.tips .tips-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  gap: 5rem;
-}
-.tips .tips-content .tip {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-.tips .tips-content .tip img {
-  width: 64px;
-  height: 64px;
-}
-.tips .tips-content .tip h3 {
-  font-weight: 600;
-  font-size: 24px;
 }
 
 .bmi-limitations {
@@ -417,12 +396,6 @@ body {
     width: 368px;
     height: 433px;
   }
-  .tips {
-    margin-top: 7rem;
-  }
-  .tips .tips-content {
-    gap: 2rem;
-  }
   .bmi-limitations .contant {
     max-width: 400px;
   }
@@ -510,12 +483,6 @@ body {
   .bmi-meaning .section-two .section-title {
     font-size: 24px;
   }
-  .tips .tips-content {
-    flex-direction: column;
-  }
-  .tips .tips-content .tip {
-    flex-direction: row;
-  }
   .bmi-limitations .contant {
     max-width: 100%;
     text-align: center;
@@ -556,6 +523,20 @@ body {
   .bmi-limitations .limitations-content .limitation:nth-child(5) {
     top: 0%;
     right: 0%;
+  }
+}
+@media (max-width: 992px) {
+  .tip {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .tip img {
+    margin-right: 20px;
+    width: 120px !important;
+  }
+  .tip .tip-title {
+    margin-bottom: 20px !important;
   }
 }
 @media (max-width: 767px) {
@@ -601,18 +582,6 @@ body {
   }
   .bmi-meaning .section-two p {
     font-size: 14px;
-  }
-  .tips {
-    padding: 2rem;
-  }
-  .tips .tips-bg {
-    right: 0%;
-  }
-  .tips .tips-content {
-    flex-direction: column;
-  }
-  .tips .tips-content .tip {
-    flex-direction: column;
   }
   .bmi-limitations .limitations-content {
     grid-template-columns: auto;

@@ -82,12 +82,7 @@
       }
     }
   }
-  .tips {
-    margin-top: 7rem;
-    .tips-content {
-      gap: 2rem;
-    }
-  }
+
   .bmi-limitations {
     .contant {
       max-width: 400px;
@@ -188,14 +183,6 @@
       }
     }
   }
-  .tips {
-    .tips-content {
-      flex-direction: column;
-      .tip {
-        flex-direction: row;
-      }
-    }
-  }
   .bmi-limitations {
     .contant {
       max-width: 100%;
@@ -238,6 +225,22 @@
           right: 0%;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .tip {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img{
+      margin-right: 20px;
+    }
+
+    .tip-title{
+      margin-bottom: 20px !important;
     }
   }
 }
@@ -286,18 +289,6 @@
       padding: 2.5rem;
       p {
         font-size: $xs-size;
-      }
-    }
-  }
-  .tips {
-    padding: 2rem;
-    .tips-bg {
-      right: 0%;
-    }
-    .tips-content {
-      flex-direction: column;
-      .tip {
-        flex-direction: column;
       }
     }
   }
