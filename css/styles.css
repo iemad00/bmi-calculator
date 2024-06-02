@@ -179,7 +179,6 @@ body {
 }
 .bmi-meaning .section-one .bmi-image {
   width: 468px;
-  height: 533px;
   object-fit: cover;
 }
 .bmi-meaning .section-one::after {
@@ -371,7 +370,7 @@ body {
   }
   .bmi-meaning .section-one .bmi-image {
     width: 468px;
-    height: 533px;
+    height: 433px;
   }
   .bmi-meaning .section-one::after {
     width: 100%;
